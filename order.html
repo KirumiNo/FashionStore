@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionStore - Оформление заказа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Fashion<span>Store</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="products.html">Товары</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="order.html">Заказать</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="order">
+        <div class="container">
+            <h2 class="section-title">Оформление заказа</h2>
+            <form class="order-form">
+                <div class="form-group">
+                    <label for="fullname">ФИО:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Адрес доставки:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="product">Выбранный товар:</label>
+                    <input type="text" id="product" name="product" value="Летнее платье" readonly>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Комментарий к заказу:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Подтвердить заказ</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="products.html">Товары</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="order.html">Заказать</a>
+            </div>
+            <p class="copyright">© 2023 FashionStore. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
